@@ -1,0 +1,11 @@
+.selectDrop
+{
+    width: 150px;
+    height: 300px;
+    background: #fff;
+    position: absolute;
+    left: -7px;
+    top: 160%;
+    z-index: 100;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 20%)
+}
