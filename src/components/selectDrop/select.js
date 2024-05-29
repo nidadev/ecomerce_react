@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import '../selectDrop/select.css'
 
 const Select = ()=>
     {
+        const [isOpenSelect, setisOpenSelect] = useState(false)
+        const openSelect =()=>{
+            setisOpenSelect(!isOpenSelect)
+        }
         return(
             
             <div className='selectDropWrapper cursor position-relative'>
-            <span className="selectOpen">All categories</span>
+            <span className="selectOpen" onClick={openSelect}>All categories</span>
+           { 
+           isOpenSelect === true &&
             <div className="selectDrop">
                 <div className="SearchField">
                     <input type="text"></input>
@@ -26,6 +32,7 @@ const Select = ()=>
                     </ul>
                 </div>
             </div>
+    }
         </div>
            
         )

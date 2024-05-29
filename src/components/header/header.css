@@ -31,7 +31,7 @@ header .headerSearch .selectDropWrapper::after{
     height: 30px;
     background-color: #cacaca;
     position: absolute;
-    top: 3px;
+    top: 4px;
     right:0px;
 
 }
