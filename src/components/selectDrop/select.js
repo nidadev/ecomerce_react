@@ -5,8 +5,8 @@ const Select = ()=>
     {
         return(
             
-            <div className='selecrDrop cursor position-relative'>
-            All categories
+            <div className='selectDropWrapper cursor position-relative'>
+            <span className="selectOpen">All categories</span>
             <div className="selectDrop">
                 <div className="SearchField">
                     <input type="text"></input>

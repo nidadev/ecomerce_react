@@ -16,7 +16,7 @@ header .headerSearch
     padding:6px 7px; 
     font-size: 16px;
 }
-header .headerSearch .selecrDrop
+header .headerSearch .selectDropWrapper
 {
     width:150px;
     font-size:bold;
@@ -25,7 +25,7 @@ header .headerSearch .selecrDrop
     position:absolute;
     top: 0px;
 }
-header .headerSearch .selecrDrop::after{
+header .headerSearch .selectDropWrapper::after{
     content: '';
     width:1px;
     height: 30px;
