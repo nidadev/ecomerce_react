@@ -16,6 +16,6 @@ You may also see any lint errors in the console.
 
 ### Description
 
-![image](https://github.com/nidadev/ecomerce_react/assets/53574300/779761e0-914d-4ebc-b751-5b58d4c25899)
+
 
 
