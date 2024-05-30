@@ -43,6 +43,10 @@
 {
     background-color: #3bb77e;
 }
+.selectDrop .searchResults li:active
+{
+    background-color: #ccc;
+}
 .selectDrop .searchResults::-webkit-scrollbar
 {
     width:8px !important;
