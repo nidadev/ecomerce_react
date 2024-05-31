@@ -6,26 +6,30 @@ const Select = ()=>
     {
         const [isOpenSelect, setisOpenSelect] = useState(false)
                 const [SelectedIndex, setSelectedIndex] = useState(0)
+                const [SelectedItem, setSelectedItem] = useState('All Categories')
+
 
         const openSelect =()=>{
             setisOpenSelect(!isOpenSelect)
         }
-        const closeSelect =(index)=>{
+        const closeSelect =(index,name)=>{
+            //alert(e.target.value);
             setSelectedIndex(index);
             setisOpenSelect(false);
+            setSelectedItem(name);
         }
         return(
             
             <div className='selectDropWrapper cursor position-relative'>
-            <span className="selectOpen" onClick={openSelect}>All categories <KeyboardArrowDownIcon /></span>
+            <span className="selectOpen" onClick={openSelect}> {SelectedItem}<KeyboardArrowDownIcon className="arrow"/></span>
            { 
            isOpenSelect === true &&
             <div className="selectDrop">
                 <div className="SearchField">
                     <input type="text"></input>
                     <ul className="searchResults">
-                    <li onClick={()=>closeSelect(0)} className={`${setSelectedIndex===0 ?'active':''}`}>All Categories</li>
-                    <li onClick={()=>closeSelect(1)} className={`${setSelectedIndex===1 ?'active':''}`}>Milks and Dairies</li>
+                    <li onClick={()=>closeSelect(0,'All Categories')} className={`${setSelectedIndex===0 ?'active':''}`}>All Categories</li>
+                    <li onClick={()=>closeSelect(1,'Milks and Dairies')} className={`${setSelectedIndex===1 ?'active':''}`}>Milks and Dairies</li>
                     <li onClick={()=>closeSelect(2)} className={`${setSelectedIndex===2 ?'active':''}`}>Wines & Drinks</li>
                     <li onClick={()=>closeSelect(3)} className={`${setSelectedIndex===3 ?'active':''}`}>Clothing & beauty</li>
                     <li onClick={()=>closeSelect(4)} className={`${setSelectedIndex===4 ?'active':''}`}>Fresh Seafood</li>

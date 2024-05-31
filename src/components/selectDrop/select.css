@@ -3,6 +3,12 @@
     display: block;
     padding: 10px 0px;
 }
+.selectDropWrapper .selectOpen .arrow
+{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
 .selectDrop
 {
     width: 300px;
