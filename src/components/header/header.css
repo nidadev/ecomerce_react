@@ -18,12 +18,13 @@ header .headerSearch
 }
 header .headerSearch .selectDropWrapper
 {
-    width:150px;
+    width:35%;
     font-size:bold;
     font-weight: 500;
     text-transform: capitalize;
     position:absolute;
     top: 0px;
+    padding-right: 15px;
 }
 header .headerSearch .selectDropWrapper::after{
     content: '';
@@ -36,7 +37,7 @@ header .headerSearch .selectDropWrapper::after{
 
 }
 header .headerSearch .search{
-width:84%;
+width:70%;
 padding-left: 15px;
 position: relative;
 }
