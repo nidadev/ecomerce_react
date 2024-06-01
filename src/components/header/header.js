@@ -1,10 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../header/header.css';
 import Logo from '../../assets/images/logo.svg'
 /*import SearchIcon from '@mui/icons-material';*/
 import { ImageSearch } from '@mui/icons-material';
 import Select from '../../components/selectDrop/select'
+
 const Header = () => {
+  const [Categories,setCategories] = useState([
+    'All Categories',
+    'Milks and Dairies',
+    'Wines & Drinks',
+    'Clothing & beauty',
+    'Fresh Seafood',
+    'Pet Foods & Toy',
+    'Fast food',
+    'Baking material',
+    'Vegetables',
+    'Fresh Fruit',
+    'Bread and Juice'
+    
+  ]);
   return (
     <>
       <header>
@@ -17,7 +32,7 @@ const Header = () => {
             <div className="col-sm-5">
 
               <div className="headerSearch d-flex align-items-center">
-                <Select />
+                <Select data={Categories}/>
                 <div className='search'>
                   <input type='text' placeholder='Search for text...'></input>
                   <ImageSearch className='searchicon' />
@@ -25,7 +40,7 @@ const Header = () => {
               </div>
 
             </div>
-            <div className='col-md-5'>
+            <div className='col-sm-5'>
               <Select />
             </div>
             {/* header search end*/}
