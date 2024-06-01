@@ -4,6 +4,7 @@ import Logo from '../../assets/images/logo.svg'
 /*import SearchIcon from '@mui/icons-material';*/
 import { ImageSearch } from '@mui/icons-material';
 import Select from '../../components/selectDrop/select'
+
 const Header = () => {
   return (
     <>
@@ -25,7 +26,7 @@ const Header = () => {
               </div>
 
             </div>
-            <div className='col-md-5'>
+            <div className='col-sm-5'>
               <Select />
             </div>
             {/* header search end*/}

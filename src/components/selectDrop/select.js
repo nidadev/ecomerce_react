@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import '../selectDrop/select.css'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { ClickAwayListener } from '@mui/base/ClickAwayListener';
+
 
 const Select = ()=>
     {
@@ -19,8 +21,8 @@ const Select = ()=>
             setSelectedItem(name);
         }
         return(
-            
-            <div className='selectDropWrapper cursor position-relative'>
+            <ClickAwayListener onClickAway={()=> {setisOpenSelect(false)}}>
+                 <div className='selectDropWrapper cursor position-relative'>
             <span className="selectOpen" onClick={openSelect}> {SelectedItem}<KeyboardArrowDownIcon className="arrow"/></span>
            { 
            isOpenSelect === true &&
@@ -45,6 +47,8 @@ const Select = ()=>
             </div>
     }
         </div>
+            </ClickAwayListener>
+           
            
         )
     }
