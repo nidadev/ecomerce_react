@@ -4,7 +4,8 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { ClickAwayListener } from '@mui/base/ClickAwayListener';
 
 
-const Select = ({data,placeholder})=>
+
+const Select = ({data,placeholder,icon})=>
     {
         const [isOpenSelect, setisOpenSelect] = useState(false)
                 const [SelectedIndex, setSelectedIndex] = useState(0)
@@ -23,6 +24,7 @@ const Select = ({data,placeholder})=>
         return(
             <ClickAwayListener onClickAway={()=> {setisOpenSelect(false)}}>
                  <div className='selectDropWrapper cursor position-relative'>
+                    {icon}
             <span className="selectOpen" onClick={openSelect}> {SelectedItem}<KeyboardArrowDownIcon className="arrow"/></span>
            { 
            isOpenSelect === true &&

@@ -5,6 +5,8 @@ import Logo from '../../assets/images/logo.svg'
 import { ImageSearch } from '@mui/icons-material';
 import Select from '../../components/selectDrop/select';
 import axios from 'axios';
+import AddLocationIcon from '@mui/icons-material/AddLocation';
+
 
 const Header = () => {
   const [Categories,setCategories] = useState([
@@ -61,7 +63,7 @@ const Header = () => {
             <div className="col-sm-5">
 
               <div className="headerSearch d-flex align-items-center">
-                <Select data={Categories} placeholder={'All Categories'}/>
+                <Select data={Categories} placeholder={'All Categories'} icon={false}/>
                 <div className='search'>
                   <input type='text' placeholder='Search for text...'></input>
                   <ImageSearch className='searchicon' />
@@ -69,9 +71,9 @@ const Header = () => {
               </div>
 
             </div>
-            <div className='col-sm-5'>
+            <div className='col-sm-3 d-flex align-item-center'>
               <div className='countryWrapper'>
-              <Select data={countryList} placeholder={'Your Location'}/>
+              <Select data={countryList} placeholder={'Your Location'} icon={<AddLocationIcon />}/>
 
               </div>
             </div>

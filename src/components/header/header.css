@@ -58,5 +58,23 @@ header .headerSearch .search input{
     }
     header .countryWrapper .selectDropWrapper
     {
-       width:200px !important; 
+       width:160px; 
+       padding-left:12px;
+       display:flex;
+       align-items: center;
+       border:1px solid #ccc;
+       height:55px;
+       box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
     }
+    header .selectOpen
+    {
+        width:100%;
+    }
+    header .countryWrapper .selectDropWrapper .selectDrop
+    {
+        left:0px !important;
+    }
+    header .countryWrapper .selectOpen
+{
+    color:#3bb77e !important;
+}
