@@ -56,3 +56,7 @@ header .headerSearch .search input{
         top: 5px;
         right: 15px;
     }
+    header .countryWrapper .selectDropWrapper
+    {
+       width:200px !important; 
+    }

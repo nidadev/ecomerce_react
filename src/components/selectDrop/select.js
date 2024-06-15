@@ -4,11 +4,11 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { ClickAwayListener } from '@mui/base/ClickAwayListener';
 
 
-const Select = (props)=>
+const Select = ({data,placeholder})=>
     {
         const [isOpenSelect, setisOpenSelect] = useState(false)
                 const [SelectedIndex, setSelectedIndex] = useState(0)
-                const [SelectedItem, setSelectedItem] = useState('All Categories')
+                const [SelectedItem, setSelectedItem] = useState(placeholder)
 
 
         const openSelect =()=>{
@@ -30,10 +30,12 @@ const Select = (props)=>
                 <div className="SearchField">
                     <input type="text" placeholder="Search here..."></input>
                     <ul className="searchResults">
+                    <li key={0} onClick={()=>closeSelect(0,placeholder)} className={`${setSelectedIndex===0 ?'active':''}`}>{placeholder}</li>
+
                         {
-                        props.data.map((item,index) => {
+                        data.map((item,index) => {
                             return(
-                                <li onClick={()=>closeSelect(index,item)} className={`${setSelectedIndex===index ?'active':''}`}>{item}</li>
+                                <li key={index+1} onClick={()=>closeSelect(index+1,item)} className={`${setSelectedIndex===index+1 ?'active':''}`}>{item}</li>
 
                             )
 

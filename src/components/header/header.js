@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../header/header.css';
 import Logo from '../../assets/images/logo.svg'
 /*import SearchIcon from '@mui/icons-material';*/
 import { ImageSearch } from '@mui/icons-material';
-import Select from '../../components/selectDrop/select'
+import Select from '../../components/selectDrop/select';
+import axios from 'axios';
 
 const Header = () => {
   const [Categories,setCategories] = useState([
-    'All Categories',
     'Milks and Dairies',
     'Wines & Drinks',
     'Clothing & beauty',
@@ -20,6 +20,35 @@ const Header = () => {
     'Bread and Juice'
     
   ]);
+    useEffect (() => {
+      getCountry('https://countriesnow.space/api/v0.1/countries/');
+
+  },[]);
+  const countryList = [];
+  const getCountry= async(url)=>{
+    try{
+      await axios.get(url).then((res) => {
+        if(res!==null)
+          {
+            //console.log(res.data.data);
+            res.data.data.map((item,index)=>
+            {
+              countryList.push(item.country);
+
+            });
+          }
+
+      });
+
+    }
+    catch(error)
+    {
+      console.log(error.message);
+
+    }
+
+  }
+
   return (
     <>
       <header>
@@ -32,7 +61,7 @@ const Header = () => {
             <div className="col-sm-5">
 
               <div className="headerSearch d-flex align-items-center">
-                <Select data={Categories}/>
+                <Select data={Categories} placeholder={'All Categories'}/>
                 <div className='search'>
                   <input type='text' placeholder='Search for text...'></input>
                   <ImageSearch className='searchicon' />
@@ -41,7 +70,10 @@ const Header = () => {
 
             </div>
             <div className='col-sm-5'>
-              <Select />
+              <div className='countryWrapper'>
+              <Select data={countryList} placeholder={'Your Location'}/>
+
+              </div>
             </div>
             {/* header search end*/}
 
