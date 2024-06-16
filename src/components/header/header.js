@@ -6,6 +6,10 @@ import { ImageSearch } from '@mui/icons-material';
 import Select from '../../components/selectDrop/select';
 import axios from 'axios';
 import AddLocationIcon from '@mui/icons-material/AddLocation';
+import IconCompare from '../../assets/images/icon-compare.svg';
+import IconHeart from '../../assets/images/icon-heart.svg';
+import IconCart from  '../../assets/images/icon-cart.svg';
+import IconUser from  '../../assets/images/icon-user.svg';
 
 
 const Header = () => {
@@ -71,12 +75,21 @@ const Header = () => {
               </div>
 
             </div>
-            <div className='col-sm-3 d-flex align-item-center'>
-              <div className='countryWrapper'>
+            <div className='col-sm-5 d-flex align-item-center'>
+             <div className='ml-auto d-flex align-item-center'>
+             <div className='countryWrapper'>
               <Select data={countryList} placeholder={'Your Location'} icon={<AddLocationIcon />}/>
 
               </div>
+              <ul className='list list-inline mb-0 headerTabs'>
+              <li className='list-inline-item'><span><img src={IconCompare}></img>Compare</span></li>
+              <li className='list-inline-item'><span><img src={IconHeart}></img>Wishlist</span></li>
+              <li className='list-inline-item'><span><img src={IconCart}></img>Cart</span></li>
+              <li className='list-inline-item'><span><img src={IconUser}></img>Account</span></li>
+            </ul>
+             </div>
             </div>
+            
             {/* header search end*/}
 
           </div> {/* row end */}

@@ -78,3 +78,11 @@ header .headerSearch .search input{
 {
     color:#3bb77e !important;
 }
+header .headerTabs
+{
+    padding-left:40px;
+}
+header .headerTabs li span{
+    font-size:20px;
+    cursor: pointer;
+}
