@@ -82,9 +82,9 @@ const Header = () => {
 
               </div>
               <ul className='list list-inline mb-0 headerTabs'>
-              <li className='list-inline-item'><span><img src={IconCompare}></img>Compare</span></li>
-              <li className='list-inline-item'><span><img src={IconHeart}></img>Wishlist</span></li>
-              <li className='list-inline-item'><span><img src={IconCart}></img>Cart</span></li>
+              <li className='list-inline-item'><span><img src={IconCompare}></img><span className="badge bg-success rounded-circle">3</span>Compare</span></li>
+              <li className='list-inline-item'><span><img src={IconHeart}></img><span className="badge bg-success rounded-circle">6</span>Wishlist</span></li>
+              <li className='list-inline-item'><span><img src={IconCart}></img><span className="badge bg-success rounded-circle">4</span>Cart</span></li>
               <li className='list-inline-item'><span><img src={IconUser}></img>Account</span></li>
             </ul>
              </div>
