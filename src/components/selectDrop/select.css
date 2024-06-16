@@ -2,6 +2,8 @@
 {
     display: block;
     padding: 10px 0px;
+    /*position: absolute;*/
+    
 }
 .selectDropWrapper .selectOpen .arrow
 {
@@ -61,3 +63,4 @@
 {
     background-color: #ccc;
 }
+
