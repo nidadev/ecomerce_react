@@ -125,6 +125,7 @@ const Header = () => {
           </div> {/* row end */}
         </div>
       </header>
+      <Nav />
     </>
   );
 }
