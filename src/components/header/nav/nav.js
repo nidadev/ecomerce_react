@@ -17,6 +17,17 @@ const Nav = ()=> {
                     </div>
                     <div className="col-sm-7">
                         <nav>
+                            <ul className="list list-inline">
+                                <li className="list-inline-item">Home</li>
+                                <li>About</li>
+                                <li>Shop</li>
+                                <li>Vendors</li>
+                                <li>Mega menu</li>
+                                <li>Blog</li>
+                                <li>Pages</li>
+                                <li>Contact</li>
+
+                            </ul>
                         </nav>
 
                     </div>
