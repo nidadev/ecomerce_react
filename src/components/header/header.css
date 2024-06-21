@@ -15,6 +15,7 @@ header .headerSearch
     border:1px solid #bce3c9;
     padding:6px 7px; 
     font-size: 16px;
+    border-radius: 4px;
 }
 header .headerSearch .selectDropWrapper
 {
@@ -105,3 +106,37 @@ header .headerTabs li span .badge{
     top:-16px;
     left:15px;
 }
+.dropdownMenu
+{
+    position:absolute;
+    top:50px;
+    width:200px;
+    left:0px;
+    right:0px !important;
+    height:auto;
+    background: #fff;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
+    margin:0px !important;
+}
+ .dropdownMenu li{
+    list-style: none;
+    width: 100%;
+}
+ .dropdownMenu button{
+    width: 100% !important;
+    text-align: left !important;
+    justify-content: flex-start !important;
+    color:#000 !important;
+    text-transform: capitalize;
+    left:-26px;
+    padding:10px 0px !important;
+}
+.dropdownMenu button svg{
+    opacity: 0.7;
+}
+
+.dropdownMenu button:hover
+{
+    background: #ccc;
+}
+ 
