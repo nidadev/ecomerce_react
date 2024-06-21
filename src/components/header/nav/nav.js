@@ -2,6 +2,8 @@ import React from "react";
 import './nav.css';
 import Button from '@mui/material/Button';
 import CategoryOutlinedIcon from '@mui/icons-material/CategoryOutlined';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+
 
 
 const Nav = ()=> {
@@ -10,7 +12,7 @@ const Nav = ()=> {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-sm-3">
-                    <Button className="bg-success text-white catTab"><CategoryOutlinedIcon />Browse All Categories</Button>
+                    <Button className="bg-success text-white catTab"><CategoryOutlinedIcon />&nbsp;Browse All Categories<KeyboardArrowDownIcon /></Button>
 
                     </div>
                     <div className="col-sm-7">
