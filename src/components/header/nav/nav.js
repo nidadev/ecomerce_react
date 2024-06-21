@@ -33,11 +33,12 @@ const Nav = ()=> {
                         </nav>
 
                     </div>
-                    <div className="col-sm-2 d-flex align-items-center">
+                    <div className="col-sm-2 d-flex align-items-center part3">
                         <div className="phNo d-flex align-items-center">
                         <span><HeadphonesOutlinedIcon /></span>
                         <div className="info ml-3">
-                            <h4 className="text-g">1900 - 888</h4></div>
+                            <h3 className="text-g mb-0">1900 - 888</h3>
+                            <p className="">24/7 Support Center</p></div>
                         </div>
 
                     </div>
