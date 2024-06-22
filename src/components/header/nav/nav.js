@@ -40,7 +40,9 @@ const Nav = ()=> {
                                         <li><Button><Link to="/react/about">Forgot password</Link></Button></li>
                                         <li><Button><Link to="/react/about">Reset password</Link></Button></li>
                                         <li><Button><Link to="/react/about">Purchase Guide</Link></Button></li>
-
+                                        <li><Button><Link to="/react/about">Privacy Policy</Link></Button></li>
+                                        <li><Button><Link to="/react/about">Terms of Service</Link></Button></li>
+                                        
                                     </ul>
 
                                 </div>
