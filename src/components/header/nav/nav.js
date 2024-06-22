@@ -26,7 +26,26 @@ const Nav = ()=> {
                                 <li className="list-inline-item"><Button><Link>Vendors</Link></Button></li>
                                 <li className="list-inline-item"><Button><Link>Mega menu<KeyboardArrowDownIcon /></Link></Button></li>
                                 <li className="list-inline-item"><Button><Link>Blog</Link></Button></li>
-                                <li className="list-inline-item"><Button><Link>Pages<KeyboardArrowDownIcon /></Link></Button></li>
+                                <li className="list-inline-item"><Button><Link>Pages<KeyboardArrowDownIcon /></Link></Button>
+                                <div className="dropdown_menu">
+                                    <ul>
+                                        <li><Button><Link to="/react/about">About Us</Link></Button></li>
+                                        <li><Button><Link to="/react/about">Contact</Link></Button></li>
+
+                                        <li><Button><Link to="/react/about">My Account</Link></Button></li>
+
+                                        <li><Button><Link to="/react/about">Login</Link></Button></li>
+
+                                        <li><Button><Link to="/react/about">Register</Link></Button></li>
+                                        <li><Button><Link to="/react/about">Forgot password</Link></Button></li>
+                                        <li><Button><Link to="/react/about">Reset password</Link></Button></li>
+                                        <li><Button><Link to="/react/about">Purchase Guide</Link></Button></li>
+
+                                    </ul>
+
+                                </div>
+                                
+                                </li>
                                 <li className="list-inline-item"><Button><Link>Contact</Link></Button></li>
 
                             </ul>
@@ -34,7 +53,7 @@ const Nav = ()=> {
 
                     </div>
                     <div className="col-sm-2 d-flex align-items-center part3">
-                        <div className="phNo d-flex align-items-center">
+                        <div className="phNo d-flex align-items-center ml-0">
                         <span><HeadphonesOutlinedIcon /></span>
                         <div className="info ml-3">
                             <h3 className="text-g mb-0">1900 - 888</h3>
