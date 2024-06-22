@@ -31,3 +31,34 @@ font-size:20px !important;
 .nav .part3 .phNo svg{font-size:50px !important;}
 .nav .part3 .phNo h3{font-size:32px !important; line-height:35px !important;}
 .nav .part3 .phNo p{font-size:16px!important;}
+.nav nav ul li
+{
+    position:relative;
+}
+.nav .dropdown_menu
+{
+    position: absolute;
+    top:100%;
+    width:300px;
+    height:auto;
+    z-index:100;
+    background:#fff;
+    /*border:1px solid #ccc;*/
+    padding:10px 20px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
+    border-radius:4px;
+
+}
+.nav .dropdown_menu li{
+    list-style: none;
+    width: 100%;
+}
+.nav .dropdown_menu button{
+    width: 100% !important;
+    text-align: left !important;
+    justify-content: flex-start !important;
+    color:#000 !important;
+    text-transform: capitalize;
+    left:-26px;
+    padding:10px 0px !important;
+}

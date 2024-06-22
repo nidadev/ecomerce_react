@@ -8,6 +8,8 @@ body{
   box-sizing: border-box;
   padding:0px 2px;
 }
+#root
+{zoom:60%;}
 .container-fluid
 {
   padding:0px 36px;

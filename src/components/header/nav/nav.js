@@ -20,7 +20,7 @@ const Nav = ()=> {
                     <div className="col-sm-7">
                         <nav>
                             <ul className="list list-inline mb-0">
-                                <li className="list-inline-item"><Button><Link>Home</Link></Button></li>
+                                <li className="list-inline-item"><Button><Link to="/react">Home</Link></Button></li>
                                 <li className="list-inline-item"><Button><Link>About</Link></Button></li>
                                 <li className="list-inline-item"><Button><Link>Shop<KeyboardArrowDownIcon /></Link></Button></li>
                                 <li className="list-inline-item"><Button><Link>Vendors</Link></Button></li>
@@ -29,7 +29,7 @@ const Nav = ()=> {
                                 <li className="list-inline-item"><Button><Link>Pages<KeyboardArrowDownIcon /></Link></Button>
                                 <div className="dropdown_menu">
                                     <ul>
-                                        <li><Button><Link to="/react/about">About Us</Link></Button></li>
+                                        <li className="d-flex align-items-center"><Button><Link to="/react/about">About Us</Link></Button></li>
                                         <li><Button><Link to="/react/about">Contact</Link></Button></li>
 
                                         <li><Button><Link to="/react/about">My Account</Link></Button></li>
